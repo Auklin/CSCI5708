@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#02c6fc"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bhupendrarajawat.shadowrecorder.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press To Record"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/recimage"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:background="#02c6fc"
+        android:layout_height="wrap_content"
+        android:src="@drawable/microphone"
+        android:id="@+id/recimage"
+        android:elevation="0dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:background="#02c6fc"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:src="@drawable/stop"
+        android:id="@+id/stopimage"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/recimage"
+        android:layout_alignStart="@+id/recimage" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:background="#02c6fc"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:src="@drawable/play"
+        android:id="@+id/playimage"
+        android:layout_below="@+id/recimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+</RelativeLayout>
